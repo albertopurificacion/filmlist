@@ -3,6 +3,7 @@ version: '3'
 services:
   mysql:
     image: mysql:5.6
+    container_name: mysql
     environment:
       MYSQL_DATABASE: filmlist
       MYSQL_USER: filmlist
@@ -21,6 +22,7 @@ services:
 
   phpmyadmin:
     image: phpmyadmin
+    container_name: phpmyadmin
     restart: always
     ports:
       - 8088:80
