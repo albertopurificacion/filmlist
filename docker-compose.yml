@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  mysql:
+    image: mysql:5.6
+    environment:
+      MYSQL_DATABASE: filmlist
+      MYSQL_USER: filmlist
+      MYSQL_PASSWORD: qwerty123
+      MYSQL_ROOT_PASSWORD: qwerty1234
+    ports:
+      - "3306:3306"
+    restart: always
+
+  web:
+    image: katafurius/filmlist
+    ports:
+      - "8080:80"
+    links:
+      - mysql
+
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 8088:80
+    environment:
+      - PMA_ARBITRARY=1
