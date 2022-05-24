@@ -17,7 +17,8 @@ services:
     build: .
     ports:
       - "8080:80"
-    
+    volumes:
+      - ./files:/var/www/html
     links:
       - mysql
 

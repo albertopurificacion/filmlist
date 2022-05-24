@@ -1,6 +1,6 @@
 FROM php:7.2-apache
 
-VOLUME /homa/alberto/filmlist/filmlist/files:/var/www/html
+VOLUME [ "/files" ]
 
 COPY my-apache-site.conf /etc/apache2/sites-available/my-apache-site.conf
 
