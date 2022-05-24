@@ -14,7 +14,7 @@ services:
     restart: always
 
   web:
-    image: katafurius/filmlist
+    build: .
     ports:
       - "8080:80"
     links:
