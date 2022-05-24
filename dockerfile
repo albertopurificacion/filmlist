@@ -1,6 +1,6 @@
 FROM php:7.2-apache
 
-VOLUME [ "/var/www/html" ]
+VOLUME ./files /var/www/html
 
 COPY my-apache-site.conf /etc/apache2/sites-available/my-apache-site.conf
 
