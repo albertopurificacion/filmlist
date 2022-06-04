@@ -4,7 +4,7 @@ phases:
     commands:
       - echo Logging in to Docker Hub...
       - docker login -u katafurius -p Iniesta080116
-      - REPOSITORY_URI=kataFurius/filmlist
+      - REPOSITORY_URI=katafurius/filmlist
       - IMAGE_TAG=${COMMIT_HASH:=latest}
   build:
     commands:
