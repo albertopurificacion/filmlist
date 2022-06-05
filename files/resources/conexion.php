@@ -4,7 +4,7 @@ $servername = "db-filmlist.cjfgrzket4nr.us-east-1.rds.amazonaws.com";
 //$port = 9550; //especificamos puerto si no es el 3306
 $username = "admin";
 $password = "Iniesta080116";
-$dbname = "db-filmlist";
+$dbname = "filmlist";
 
 try{
     $conexion = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
