@@ -1,10 +1,10 @@
 <?php
 
-$servername = "localhost";
+$servername = "db-filmlist.cjfgrzket4nr.us-east-1.rds.amazonaws.com";
 //$port = 9550; //especificamos puerto si no es el 3306
-$username = "root";
-$password = "";
-$dbname = "tienda";
+$username = "admin";
+$password = "Iniesta080116";
+$dbname = "db-filmlist";
 
 try{
     $conexion = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);

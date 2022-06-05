@@ -1,7 +1,32 @@
-version: '3.4'
+version: '3'
 
 services:
-  web:
-    image: katafurius/filmlist
+  mysql:
+    image: mysql:5.6
+    container_name: mysql
+    environment:
+      MYSQL_DATABASE: filmlist
+      MYSQL_USER: filmlist
+      MYSQL_PASSWORD: qwerty123
+      MYSQL_ROOT_PASSWORD: qwerty1234
     ports:
-      - 80
+      - "3306:3306"
+    restart: always
+
+  web:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - ./files:/var/www/html
+    links:
+      - mysql
+
+  phpmyadmin:
+    image: phpmyadmin
+    container_name: phpmyadmin
+    restart: always
+    ports:
+      - 8088:80
+    environment:
+      - PMA_ARBITRARY=1
