@@ -16,7 +16,7 @@
     <div class="container">
         <nav class="navbar navbar-dark mt-5">
             <div class="container-fluid">
-                <a class="navbar-brand title">y a ahora</a>
+                <a class="navbar-brand title">ya</a>
                 <div class="d-flex">
                     <a class="btn btn-success" href="registro.php" target="_blank">Resgistrarse</a>
                 </div>
