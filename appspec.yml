@@ -3,13 +3,7 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: <TASK_DEFINITION>
+        TaskDefinition: "arn:aws:ecs:us-east-1:811458078040:task-definition/APP-Filmlist:latest"
         LoadBalancerInfo:
           ContainerName: "APP-FILMLIST"
           ContainerPort: 80
-Hooks:
-- BeforeInstall: "BeforeInstallHookFunctionName"
-- AfterInstall: "AfterInstallHookFunctionName"
-- AfterAllowTestTraffic: "AfterAllowTestTrafficHookFunctionName" 
-- BeforeAllowTraffic: "BeforeAllowTrafficHookFunctionName"
-- AfterAllowTraffic: "AfterAllowTrafficHookFunctionName"
