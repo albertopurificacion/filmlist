@@ -16,7 +16,7 @@
     <div class="container">
         <nav class="navbar navbar-dark mt-5">
             <div class="container-fluid">
-                <a class="navbar-brand title">filmlist</a>
+                <a class="navbar-brand title">Titulo</a>
                 <div class="d-flex">
                     <a class="btn btn-success" href="registro.php" target="_blank">Resgistrarse</a>
                 </div>
