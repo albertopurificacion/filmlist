@@ -16,7 +16,7 @@ services:
   web:
     build: .
     ports:
-      - "80:80"
+      - "8080:80"
     volumes:
       - ./files:/var/www/html
     links:
@@ -27,6 +27,6 @@ services:
     container_name: phpmyadmin
     restart: always
     ports:
-      - 8080:80
+      - 8088:80
     environment:
       - PMA_ARBITRARY=1
