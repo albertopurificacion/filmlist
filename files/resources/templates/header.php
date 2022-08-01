@@ -16,7 +16,11 @@
     <div class="container">
         <nav class="navbar navbar-dark mt-5">
             <div class="container-fluid">
+<<<<<<< HEAD
                 <a class="navbar-brand title">prueba</a>
+=======
+                <a class="navbar-brand title">filmlist</a>
+>>>>>>> 9bce45da8d1a2fff4c6edae47df9c7c9ffc788ba
                 <div class="d-flex">
                     <a class="btn btn-success" href="registro.php" target="_blank">Resgistrarse</a>
                 </div>
